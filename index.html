@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8 />
+    <title>Lexington KY Bikeways (Existing and Proposed)</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,900i" rel="stylesheet">
+
+    <style>
+        /* UK Colors: 
+            #c7c9c8 light gray 
+            #63666a dark gray
+            #15397f dark blue
+            #009bda light blue
+            #0033a0 official blue
+        */
+
+        /* colors #13a106 is the green in the first map, #d10e50 is the brighter red, #9f042d is the darker red */
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: #01566c;
+            font-family: 'Lato', sans-serif;
+            font-weight: 300;
+            color: #ffffff;
+            font-size: 1.1em;
+
+        }
+
+        section {
+            width: 80%;
+            margin: 10px auto;
+        }
+
+        h1 {
+            font-family: 'Lato', sans-serif;
+            font-weight: 900i;
+            font-size: 2.8em;
+            /*font-style: italic;*/
+            /* The em unit. 3x the current size */
+            letter-spacing: .01em;
+            margin: 0 0 15px 0;
+            /* text-transform: uppercase; */
+        }
+
+        h2 {
+            font-family: 'Lato', sans-serif;
+            font-weight: 500;
+            /*color: #63666a; */
+            font-size: 1.8em;
+            letter-spacing: .06em;
+            /* font-style: italic; */
+            margin: 0 0 25px 0;
+        }
+
+        p {
+            font-size: 1.15em;
+            line-height: 1.8em;
+            margin: 0 0 25px 0;
+        }
+
+        a {
+            color: #aabdc7;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ul {
+            padding: 0px 20px 4px 20px;
+            /* font-size: 0.96em; */
+            line-height: 1.6em;
+            /* color: #63666a; */
+        }
+
+        li {
+            margin: 10px 0
+        }
+
+        #map {
+            width: 100%;
+            margin: 0px auto;
+
+        }
+
+        .max-image-width {
+            width: 100%;
+        }
+
+        /* add custom style class here */
+
+        .linkbox {
+            margin: 3px 0 20px 0;
+            display: block;
+            font-weight: 300;
+        }
+
+        hr {
+            border: 0px;
+            border-bottom: 1px solid #aabdc7;
+            padding-top: 20px;
+        }
+
+        /* Use float property to make two-column layout */
+
+        .first-column {
+            float: left;
+            width: 48%;
+            padding-right: 20px;
+        }
+
+        .column {
+            float: left;
+            width: 48%;
+        }
+
+        /* Clear floats after the columns */
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .svg-title {
+            float: left;
+            display: inline-block;
+            width: 75px;
+            margin: -8px 10px -8px 0;
+        }
+
+        /* When browser is 800px wide or less */
+
+        @media screen and (max-width: 800px) {
+
+            .first-column,
+            .column {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    
+    <section>
+        <h1>Bicycle Network in Lexington, KY: Existing network and proposed complementary network along active rail lines</h1>
+        <br>
+    
+
+        <h2>Existing Bicycle Network</h2>
+        
+        <img src="images/existing-bike-infrastructure-2400px.png" width="100%">
+        <a target ="_blank" href="images/existing-bike-infra-8000px.png"> Click here for full screen version</a> 
+        <br>
+
+        <p>
+            Lexington's current bicycle network includes off-road, shared use trails free from automobile traffic, depicted as 
+            green lines in the above map. Also included are many on-road bike lanes and sharrows, where 
+            cyclists ride mere feet from (or sometimes sharing a lane with) motorists. These on-road facilities are depicted in the 
+            above map as red lines: the brighter red indicates a dedicated bike lane*, while the 
+            darker red indicates a cyclist must share a lane with motorists or in some cases must ride
+            on a road shoulder that does not meet the standards required for a bike lane.
+        </p>
+
+        <p>
+            The above map also includes the streets overlying the bicycle network, depicted as black lines. Line thickness
+            increases as speed limit (and therefore danger to cyclists) increases.
+        </p>
+
+        <p>
+            * Dedicated bike lanes include both standard bike lanes and "buffered bike lanes" in which the road is striped with a 
+            "buffer" space between vehicles and bikes. Neither case offers a physical barrier between bikes and cars.
+        </p>    
+
+
+
+        <h2>Proposed Complementary Network</h2>
+
+        <div class="row">
+            <div class="first-column">
+                <p>
+                    <img src="images/proposed-network-population-1200px.png" width="100%">
+
+                    <a target="_blank" href="images/proposed-network-population-8000px.png" class=""linkbox">Link to full-screen version</a>
+                </p>
+            </div>
+            <div class="second-column">
+                <p>
+                    Shown here in green are the current (existing and funded) off-road shared use trails.
+                    Shown in blue are my propsed trails, running alongside active rail lines, showing increased connectivity, including:
+                    <ul>
+                        <li>south side neighborhoods between Nicholasville Rd and Clays Mill Rd, as well as access to retail including the Fayette Mall and Nicholasville Rd corridor</li> 
+                        <li>east side neighborhoods along Loudon Ave, Winchester Rd, and North Broadway/Bryan Station</li>
+                        <li>north side neighborhoods including Meadowthorpe, Georgetown Rd, and the back (eastern portion) of Masterson Station</li>
+                        <li>west side neighborhoods including Cardinal Valley</li>
+                    </ul>
+                    These trails could be extended into neighboring counties to create a network of interconnected cycling communities.
+                </p>
+                <p>Photographic evidence of a successful shared use path along an active rail line:</p>
+                    <img src="PXL_20210813_173836505.jpg" width="50%"><br>
+                    The Lake Walk, Duluth, MN<br>
+                    Photo by Kristin Six<br>
+                    <br>
+                    <img src="PXL_20210813_173624495.MP.jpg" width="50%"><br>
+                    The Lake Walk with a pedestrian bridge over the tracks in the distance, in Duluth, MN<br>
+                    Photo by Kristin Six
+                
+            </div>
+        </div>
+
+        <h2>For more information, see <a href="https://github.com/newmapsplus/map671-module-08-kristinsix/tree/master/practice-files-for-final-project">my github repository!</a></h2>
+
+
+        <hr>
+        <!-- <h4><a href="https://uky-gis.github.io">UKy GIS and Mapping</a></h4> -->
+        <a href="https://uky-gis.github.io">
+            <img src="logo-color-400px.png" alt="Uinversity of Kentucky Geography"></a>
+    </section>
+</body>
+</html>
